@@ -1,22 +1,25 @@
-public class Auteur{
-    private String Nom;
-    private Map <String.Integer> perfoTraj;
-    private Map <String.Integer> perfoCom;
-    private Map <String.Integer> perfoDrame;
+import java.util.Map;
+import java.util.HashMap;
 
-    public Auteur(nom){
-        this.Nom=nom;
+public class Auteur{
+    private String nom;
+    private Map <String, Integer> perfoTraj;
+    private Map <String, Integer> perfoCom;
+    private Map <String, Integer> perfoDrame;
+    public Auteur(String nom){
+        this.nom=nom;
         this.perfoTraj=new HashMap<>();
         this.perfoCom=new HashMap<>();
         this.perfoDrame=new HashMap<>();
     }
-    public int getQualitéTragédie(){
+    
+    public Map <String, Integer> getQualitéTragédie(){
         return this.perfoTraj;
     }
 
    @Override
    public String toString(){
-        string s1="L'honorable";
+        String s1="L'honorable";
         return s1.concat(this.nom);
    } 
 }

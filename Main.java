@@ -55,12 +55,7 @@ class Main {
     Auteur euripide = new Auteur("Euripide", 
                                  92, citation_hécube,
                                  0, "",
-                                 80, citation_cyclope);
-
-    String citation_guêpes =
-        "TRYGÉE : Tiens, voilà quelqu'un qui s'amène avec une couronne de lauriers sur la tête.\n"
-            + "LE SERVITEUR : Qui ça peut-il être ?\n"
-            + "TRYGÉE : Il a une tête de charlatan.\n"
+                                 80, cshMap<>();te de charlatan.\n"
             + "LE SERVITEUR : Un devin peut-être ?";
 
     String citation_thesmophories =

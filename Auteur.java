@@ -25,6 +25,22 @@ public class Auteur{
     public String getCitationTragédie(){
         return this.citation.get("Trajedie");
     }
+    
+    public Integer getQualitéComedie(){
+        return this.perf.get("Comedie");
+    }
+
+    public String getCitationComedie(){
+        return this.citation.get("Comedie");
+    }
+
+    public Integer getQualitéDrame(){
+        return this.perf.get("Drame");
+    }
+
+    public String getCitationDrame(){
+        return this.citation.get("Drame");
+    }
 
     @Override
     public String toString(){

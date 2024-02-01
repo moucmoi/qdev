@@ -1,0 +1,3 @@
+class Journée{
+    priva
+}

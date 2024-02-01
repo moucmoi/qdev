@@ -48,10 +48,24 @@ public class Auteur{
         for (Map.Entry<String, Integer> type : perf.entrySet()) {
             if (type.getValue() > min) {
                 res = type.getKey();
+                min = type.getValue();
             }
         }
         return res;
     }
+
+    public int qualitéStyle(Style s){
+        if (Style s="Comedie"){
+            return getQualitéComedie();
+        }
+        if (Style s="Drame"){
+            return getQualitéDrame();
+        }
+        if (Style s="Trajedie"){
+            return getQualitéTragédie();
+        }
+    }
+
 
 
     @Override

@@ -42,6 +42,18 @@ public class Auteur{
         return this.citation.get("Drame");
     }
 
+    public String pointFort() {
+        int min = -5;
+        String res = null;
+        for (Map.Entry<String, Integer> type : perf.entrySet()) {
+            if (type.getValue() > min) {
+                res = type.getKey();
+            }
+        }
+        return res;
+    }
+
+
     @Override
     public String toString(){
         String s1="L'honorable";

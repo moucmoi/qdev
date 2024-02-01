@@ -18,14 +18,16 @@ public class Auteur{
         this.perf.put("Drame", drame);
     }
     
-    public Map <String, Integer> getQualitéTragédie(){
-        return this.perfoTraj;
+    public Integer getQualitéTragédie(){
+        return this.perf.get("Trajedie");
     }
 
-    public  getCitationTragédie
+    public String getCitationTragédie(){
+        return this.citation.get("Trajedie");
+    }
 
-   @Override
-   public String toString(){
+    @Override
+    public String toString(){
         String s1="L'honorable";
         return s1.concat(this.nom);
    } 

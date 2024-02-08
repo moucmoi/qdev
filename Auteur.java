@@ -59,7 +59,9 @@ public class Auteur{
     }
 
 
-    
+    public String citationStyle(Style s){
+        return this.citation.get(s.toString());
+    }
 
 
 

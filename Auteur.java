@@ -18,15 +18,15 @@ public class Auteur{
         this.perf.put("Drame", drame);
     }
     
-    public Integer getQualitéTragédie(){
+    public Integer getQualiteTragedie(){
         return this.perf.get("Trajedie");
     }
 
-    public String getCitationTragédie(){
+    public String getCitationTragedie(){
         return this.citation.get("Trajedie");
     }
     
-    public Integer getQualitéComedie(){
+    public Integer getQualiteComedie(){
         return this.perf.get("Comedie");
     }
 
@@ -34,7 +34,7 @@ public class Auteur{
         return this.citation.get("Comedie");
     }
 
-    public Integer getQualitéDrame(){
+    public Integer getQualiteDrame(){
         return this.perf.get("Drame");
     }
 
@@ -54,7 +54,7 @@ public class Auteur{
         return res;
     }
 
-    public int qualitéStyle(Style s){
+    public int qualitStyle(Style s){
         return this.perf.get(s.toString());
     }
 

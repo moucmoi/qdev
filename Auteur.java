@@ -18,13 +18,52 @@ public class Auteur{
         this.perf.put("Drame", drame);
     }
     
-    public Integer getQualitéTragédie(){
+    public Integer getQualiteTragedie(){
         return this.perf.get("Trajedie");
     }
 
-    public String getCitationTragédie(){
+    public String getCitationTragedie(){
         return this.citation.get("Trajedie");
     }
+    
+    public Integer getQualiteComedie(){
+        return this.perf.get("Comedie");
+    }
+
+    public String getCitationComedie(){
+        return this.citation.get("Comedie");
+    }
+
+    public Integer getQualiteDrame(){
+        return this.perf.get("Drame");
+    }
+
+    public String getCitationDrame(){
+        return this.citation.get("Drame");
+    }
+
+    public String pointFort() {
+        int min = -5;
+        String res = null;
+        for (Map.Entry<String, Integer> type : perf.entrySet()) {
+            if (type.getValue() > min) {
+                res = type.getKey();
+                min = type.getValue();
+            }
+        }
+        return res;
+    }
+
+    public int qualitStyle(Style s){
+        return this.perf.get(s.toString());
+    }
+
+
+    public String citationStyle(Style s){
+        return this.citation.get(s.toString());
+    }
+
+
 
     @Override
     public String toString(){
